@@ -26,4 +26,17 @@ public class Contatto
     {
         return this.categoria;
     }
+
+    public void SetNome(string nome)
+    {
+        this.nome = nome;
+    }
+    public void SetTelefono(string telefono)
+    {
+        this.telefono = telefono;
+    }
+    public void SetCategoria(TipoContatto categoria)
+    {
+        this.categoria = categoria;
+    }
 }
