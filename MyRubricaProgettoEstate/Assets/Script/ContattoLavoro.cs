@@ -34,4 +34,9 @@ public class ContattoLavoro : Contatto
     {
         return " Nome Azienda: " + GetNomeAzienda() + " Email: " + GetEmailAziendale();
     }
+
+    public override string ToString()
+    {
+        return base.ToString() + GetDatiUlteriori();
+    }
 }
