@@ -20,4 +20,13 @@ public class ContattoPrivato : Contatto
     {
         return this.soprannome;
     }
+
+    public void SetIndirizzo(string indirizzo)
+    {
+        this.indirizzo = indirizzo;
+    }
+    public void SetSoprannome(string soprannome)
+    {
+        this.soprannome = soprannome;
+    }
 }
