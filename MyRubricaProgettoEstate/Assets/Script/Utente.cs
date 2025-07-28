@@ -16,4 +16,21 @@ public class Utente
         this.nomeUtente = nomeUtente;
         this.listaContatti = new List<Contatto>();
     }
+
+    public string GetTelefono()
+    {
+        return this.telefono;
+    }
+    public string GetPassword()
+    {
+        return this.password;
+    }
+    public string GetNomeUtente()
+    {
+        return thus.nomeUtente;
+    }
+    public List<Contato> GetContatti()
+    {
+        return this.listaContatti;
+    }
 }
