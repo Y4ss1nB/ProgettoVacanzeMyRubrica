@@ -1,6 +1,6 @@
 using UnityEngine;
 using System;
-public class Contatto
+public abstract class Contatto
 {
     private string nome;
     private string telefono;
@@ -39,4 +39,6 @@ public class Contatto
     {
         this.categoria = categoria;
     }
+
+    public abstract string GetDatiUlteriori();
 }
