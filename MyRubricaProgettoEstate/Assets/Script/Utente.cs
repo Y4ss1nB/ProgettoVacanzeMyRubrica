@@ -27,7 +27,7 @@ public class Utente
     }
     public string GetNomeUtente()
     {
-        return thus.nomeUtente;
+        return this.nomeUtente;
     }
     public List<Contatto> GetContatti()
     {
@@ -42,7 +42,7 @@ public class Utente
     {
         this.password = password;
     }
-    public void SetNomeUtente()
+    public void SetNomeUtente(string nomeUtente)
     {
         this.nomeUtente = nomeUtente;
     }
