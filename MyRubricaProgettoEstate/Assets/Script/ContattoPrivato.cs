@@ -11,4 +11,13 @@ public class ContattoPrivato : Contatto
         this.indirizzo = indirizzo;
         this.soprannome = soprannome;
     }
+
+    public string GetIndirizzo()
+    {
+        return this.indirizzo;
+    }
+    public string GetSoprannome()
+    {
+        return this.soprannome;
+    }
 }
