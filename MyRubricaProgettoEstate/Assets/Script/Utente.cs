@@ -46,4 +46,9 @@ public class Utente
     {
         this.nomeUtente = nomeUtente;
     }
+
+    public void AggiungiContatto(Contatto contatto)
+    {
+        this.listaContatti.Add(contatto);
+    }
 }
