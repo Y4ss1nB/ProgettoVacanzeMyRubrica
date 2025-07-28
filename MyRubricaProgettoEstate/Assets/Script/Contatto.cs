@@ -13,4 +13,17 @@ public class Contatto
         this.telefono = telefono;
         this.categoria = categoria;
     }
+
+    public string GetNome()
+    {
+        return this.nome;
+    }
+    public string GetTelefono()
+    {
+        return this.telefono;
+    }
+    public TipoContatto GetCategoria()
+    {
+        return this.categoria;
+    }
 }
