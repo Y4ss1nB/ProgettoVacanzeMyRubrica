@@ -2,11 +2,13 @@ using UnityEngine;
 using System;
 public abstract class Contatto
 {
+    //attributi
     private string nome;
     private string telefono;
     private TipoContatto categoria;
 
 
+    //costruttore
     public Contatto(string nome, string telefono, TipoContatto categoria)
     {
         this.nome = nome;
@@ -14,6 +16,7 @@ public abstract class Contatto
         this.categoria = categoria;
     }
 
+    //getter
     public string GetNome()
     {
         return this.nome;
@@ -27,6 +30,7 @@ public abstract class Contatto
         return this.categoria;
     }
 
+    //setter
     public void SetNome(string nome)
     {
         this.nome = nome;
