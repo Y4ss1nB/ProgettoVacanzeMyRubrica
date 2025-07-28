@@ -29,4 +29,9 @@ public class ContattoPrivato : Contatto
     {
         this.soprannome = soprannome;
     }
+
+    public override string GetDatiUlteriori()
+    {
+        return " Indirizzo: " + GetIndirizzo() + " Soprannome: " + GetSoprannome();
+    }
 }
