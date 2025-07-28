@@ -41,4 +41,9 @@ public abstract class Contatto
     }
 
     public abstract string GetDatiUlteriori();
+
+    public override string ToString()
+    {
+        return "\nCategoria: " + GetCategoria() + " Nome: " + GetNome() + " Telefono: " + GetTelefono();
+    }
 }
