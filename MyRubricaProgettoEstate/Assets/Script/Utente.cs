@@ -8,4 +8,12 @@ public class Utente
     private string password;
     private string nomeUtente;
     private List<Contatto> listaContatti;
+
+    public Utente(string telefono, string password, string nomeUtente)
+    {
+        this.telefono = telefono;
+        this.password = password;
+        this.nomeUtente = nomeUtente;
+        this.listaContatti = new List<Contatto>();
+    }
 }
