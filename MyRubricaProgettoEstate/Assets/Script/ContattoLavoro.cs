@@ -29,4 +29,9 @@ public class ContattoLavoro : Contatto
     {
         this.emailAziendale = emailAziendale;
     }
+
+    public override string GetDatiUlteriori()
+    {
+        return " Nome Azienda: " + GetNomeAzienda() + " Email: " + GetEmailAziendale();
+    }
 }
