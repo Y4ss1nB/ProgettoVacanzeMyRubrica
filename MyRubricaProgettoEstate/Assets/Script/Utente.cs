@@ -51,4 +51,17 @@ public class Utente
     {
         this.listaContatti.Add(contatto);
     }
+
+    public bool RimuoviContatto(string numeroDaCancellare)
+    {
+        foreach (Contatto contatto in listaContatti)
+        {
+            if (contatto.GetTelefono() == numeroDaCancellare)
+            {
+                this.listaContatti.Remove(contatto);
+                return true;
+            }
+        }
+        return false;
+    }
 }
