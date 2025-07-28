@@ -29,7 +29,7 @@ public class Utente
     {
         return thus.nomeUtente;
     }
-    public List<Contato> GetContatti()
+    public List<Contatto> GetContatti()
     {
         return this.listaContatti;
     }
