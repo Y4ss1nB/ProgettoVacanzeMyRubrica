@@ -33,4 +33,17 @@ public class Utente
     {
         return this.listaContatti;
     }
+
+    public void SetTelfono(string telefono)
+    {
+        this.telefono = telefono;
+    }
+    public void SetPassword(string password)
+    {
+        this.password = password;
+    }
+    public void SetNomeUtente()
+    {
+        this.nomeUtente = nomeUtente;
+    }
 }
