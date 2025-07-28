@@ -11,4 +11,13 @@ public class ContattoLavoro : Contatto
         this.nomeAzienda = nomeAzienda;
         this.emailAziendale = emailAziendale;
     }
+
+    public string GetNomeAzienda()
+    {
+        return this.nomeAzienda;
+    }
+    public string GetEmailAziendale()
+    {
+        return this.emailAziendale;
+    }
 }
