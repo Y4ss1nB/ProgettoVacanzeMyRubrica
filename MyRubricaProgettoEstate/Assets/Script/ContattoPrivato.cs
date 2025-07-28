@@ -3,15 +3,18 @@ using System;
 
 public class ContattoPrivato : Contatto
 {
+    //attributi
     private string indirizzo;
     private string soprannome;
 
+    //costruttore
     public ContattoPrivato(string nome, string telefono, string indirizzo, string soprannome) : base(nome, telefono, TipoContatto.Privato)
     {
         this.indirizzo = indirizzo;
         this.soprannome = soprannome;
     }
 
+    //getter
     public string GetIndirizzo()
     {
         return this.indirizzo;
@@ -21,6 +24,7 @@ public class ContattoPrivato : Contatto
         return this.soprannome;
     }
 
+    //setter
     public void SetIndirizzo(string indirizzo)
     {
         this.indirizzo = indirizzo;
