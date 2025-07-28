@@ -34,4 +34,9 @@ public class ContattoPrivato : Contatto
     {
         return " Indirizzo: " + GetIndirizzo() + " Soprannome: " + GetSoprannome();
     }
+
+    public override string ToString()
+    {
+        return base.ToString() + GetDatiUlteriori();
+    }
 }
