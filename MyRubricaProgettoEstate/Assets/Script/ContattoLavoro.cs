@@ -20,4 +20,13 @@ public class ContattoLavoro : Contatto
     {
         return this.emailAziendale;
     }
+
+    public void SetNomeAzienda(string nomeAzienda)
+    {
+        this.nomeAzienda = nomeAzienda;
+    }
+    public void SetEmailAziendale(string emailAziendale)
+    {
+        this.emailAziendale = emailAziendale;
+    }
 }
