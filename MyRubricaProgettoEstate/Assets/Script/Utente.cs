@@ -64,4 +64,9 @@ public class Utente
         }
         return false;
     }
+
+    public override string ToString()
+    {
+        return "\nNumero: " + GetTelefono() + " Nome: " + GetNomeUtente();
+    }
 }
