@@ -8,4 +8,9 @@ public static class UtenteOnline
     {
         return this.utenteLoggato;
     }
+
+    public static void SetUtenteLoggato(Utente utente)
+    {
+        this.utenteLoggato = utente;
+    }
 }
