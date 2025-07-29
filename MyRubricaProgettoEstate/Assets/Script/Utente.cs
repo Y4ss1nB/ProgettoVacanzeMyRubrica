@@ -4,11 +4,13 @@ using System.Collections.Generic;
 
 public class Utente
 {
+    //attributi
     private string telefono;
     private string password;
     private string nomeUtente;
     private List<Contatto> listaContatti;
 
+    //costruttore
     public Utente(string telefono, string password, string nomeUtente)
     {
         this.telefono = telefono;
@@ -17,6 +19,7 @@ public class Utente
         this.listaContatti = new List<Contatto>();
     }
 
+    //getter
     public string GetTelefono()
     {
         return this.telefono;
@@ -34,6 +37,7 @@ public class Utente
         return this.listaContatti;
     }
 
+    //setter
     public void SetTelfono(string telefono)
     {
         this.telefono = telefono;
