@@ -2,13 +2,16 @@ using UnityEngine;
 using System.Collections.Generic;
 public static class GestoreUtenti
 {
+
+    //attributo
     private static List<Utente> utenti = new List<Utente>();
 
+    //getter
     public static List<Utente> GetUtenti()
     {
         return utenti;
     }
-    
+
     public static bool RegistraUtente(string telefono, string password, string nomeUtente)
     {
         foreach (Utente utente in utenti)
