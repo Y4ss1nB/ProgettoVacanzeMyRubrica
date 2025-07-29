@@ -17,4 +17,18 @@ public static class GestoreUtenti
         utenti.Add(utenteDaAggiungere);
         return true;
     }
+
+    public static Utente LoginUtente(string telefono, string password)
+    {
+        foreach (Utente utente in utenti)
+        {
+            if (utente.GetTelefono() == telefono && utente.GetPassword() == password)
+            {
+                return utente;
+            }
+        }
+        
+        return null;
+    }
+    
 }
