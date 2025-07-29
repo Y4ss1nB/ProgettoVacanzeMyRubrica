@@ -6,11 +6,11 @@ public static class UtenteOnline
 
     public static Utente GetUtenteLoggato()
     {
-        return this.utenteLoggato;
+        return utenteLoggato;
     }
 
     public static void SetUtenteLoggato(Utente utente)
     {
-        this.utenteLoggato = utente;
+        utenteLoggato = utente;
     }
 }
