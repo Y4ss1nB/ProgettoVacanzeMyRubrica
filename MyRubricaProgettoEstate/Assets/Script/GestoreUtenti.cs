@@ -4,6 +4,11 @@ public static class GestoreUtenti
 {
     private static List<Utente> utenti = new List<Utente>();
 
+    public static List<Utente> GetUtenti()
+    {
+        return utenti;
+    }
+    
     public static bool RegistraUtente(string telefono, string password, string nomeUtente)
     {
         foreach (Utente utente in utenti)
@@ -27,7 +32,7 @@ public static class GestoreUtenti
                 return utente;
             }
         }
-        
+
         return null;
     }
     
