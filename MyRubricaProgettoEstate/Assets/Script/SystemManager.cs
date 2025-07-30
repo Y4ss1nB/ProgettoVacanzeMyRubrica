@@ -22,4 +22,16 @@ public class SystemManager : MonoBehaviour
         panelloEliminazioneContatto.SetActive(false);
         panelloRicercaContatto.SetActive(false);
     }
+
+    public void MostraRegistrazione()
+    {
+        panelloLogin.SetActive(false);
+        panelloRegistrazione.SetActive(true);
+        panelloProfilo.SetActive(false);
+        panelloRubrica.SetActive(false);
+        panelloAggiuntaContattoPrivato.SetActive(false);
+        panelloAggiuntaContattoLavorativo.SetActive(false);
+        panelloEliminazioneContatto.SetActive(false);
+        panelloRicercaContatto.SetActive(false);
+    }
 }
