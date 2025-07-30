@@ -10,11 +10,17 @@ public class SystemManager : MonoBehaviour
     public GameObject panelloAggiuntaContattoLavorativo;
     public GameObject panelloEliminazioneContatto;
     public GameObject panelloRicercaContatto;
+    public static SystemManager instance;
+
+    public void Awake()
+    {
+        instance = this;
+        MostraLogin();
+    }
 
     public void MostraLogin()
     {
         UtenteOnline.SetUtenteLoggato(null);
-
         panelloLogin.SetActive(true);
         panelloRegistrazione.SetActive(false);
         panelloProfilo.SetActive(false);
