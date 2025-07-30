@@ -46,4 +46,16 @@ public class SystemManager : MonoBehaviour
         panelloEliminazioneContatto.SetActive(false);
         panelloRicercaContatto.SetActive(false);
     }
+
+    public void MostraRubrica()
+    {
+        panelloLogin.SetActive(false);
+        panelloRegistrazione.SetActive(false);
+        panelloProfilo.SetActive(false);
+        panelloRubrica.SetActive(true);
+        panelloAggiuntaContattoPrivato.SetActive(false);
+        panelloAggiuntaContattoLavorativo.SetActive(false);
+        panelloEliminazioneContatto.SetActive(false);
+        panelloRicercaContatto.SetActive(false);
+    }
 }
