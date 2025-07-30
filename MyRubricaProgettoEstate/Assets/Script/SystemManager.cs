@@ -70,4 +70,10 @@ public class SystemManager : MonoBehaviour
         panelloRubrica.SetActive(false);
         panelloAggiuntaContattoLavorativo.SetActive(true);
     }
+
+    public void MostraEliminazioneContatto()
+    {
+        panelloRubrica.SetActive(false);
+        panelloEliminazioneContatto.SetActive(true);
+    }
 }
