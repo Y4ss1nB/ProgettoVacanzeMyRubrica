@@ -10,4 +10,16 @@ public class SystemManager : MonoBehaviour
     public GameObject panelloAggiuntaContattoLavorativo;
     public GameObject panelloEliminazioneContatto;
     public GameObject panelloRicercaContatto;
+
+    public void MostraLogin()
+    {
+        panelloLogin.SetActive(true);
+        panelloRegistrazione.SetActive(false);
+        panelloProfilo.SetActive(false);
+        panelloRubrica.SetActive(false);
+        panelloAggiuntaContattoPrivato.SetActive(false);
+        panelloAggiuntaContattoLavorativo.SetActive(false);
+        panelloEliminazioneContatto.SetActive(false);
+        panelloRicercaContatto.SetActive(false);
+    }
 }
