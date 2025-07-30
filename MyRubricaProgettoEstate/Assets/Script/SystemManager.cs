@@ -64,4 +64,10 @@ public class SystemManager : MonoBehaviour
         panelloRubrica.SetActive(false);
         panelloAggiuntaContattoPrivato.SetActive(true);
     }
+
+    public void MostraAggiuntaContattoLavorativo()
+    {
+        panelloRubrica.SetActive(false);
+        panelloAggiuntaContattoLavorativo.SetActive(true);
+    }
 }
