@@ -13,6 +13,8 @@ public class SystemManager : MonoBehaviour
 
     public void MostraLogin()
     {
+        UtenteOnline.SetUtenteLoggato(null);
+
         panelloLogin.SetActive(true);
         panelloRegistrazione.SetActive(false);
         panelloProfilo.SetActive(false);
