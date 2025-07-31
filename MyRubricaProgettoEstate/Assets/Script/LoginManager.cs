@@ -7,6 +7,12 @@ public class LoginManager : MonoBehaviour
     public TMP_InputField inputPassword;
     public GameObject scrittaDiErrore;
 
+    public void Start()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        this.SvuotaCampi();
+    }
+
     public string GetInputNumeroDiTelefono()
     {
         return this.inputNumeroDiTelefono.text;
@@ -39,5 +45,12 @@ public class LoginManager : MonoBehaviour
 
         }
 
+        this.SvuotaCampi();
+    }
+
+    public void SvuotaCampi()
+    {
+        this.inputNumeroDiTelefono.text = "";
+        this.inputPassword.text = "";
     }
 }
