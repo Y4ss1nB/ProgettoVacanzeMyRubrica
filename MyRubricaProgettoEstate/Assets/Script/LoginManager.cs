@@ -16,4 +16,28 @@ public class LoginManager : MonoBehaviour
     {
         return this.inputPassword.text;
     }
+
+    public void Login()
+    {
+        this.scrittaDiErrore.SetActive(false);
+
+        try
+        {
+            Utente utente = GestoreUtenti.LoginUtente(this.GetInputNumeroDiTelefono(), this.GetInputPassword());
+
+            if (utente == null)
+            {
+                throw new ErroreException();
+            }
+
+            UtenteOnline.SetUtenteLoggato(utente);
+            SystemManager.instance.MostraProfilo(utente);
+        }
+        catch (ErroreException)
+        {
+            this.scrittaDiErrore.SetActive(true);
+
+        }
+
+    }
 }
