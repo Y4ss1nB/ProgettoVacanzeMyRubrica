@@ -7,6 +7,12 @@ public class RegistrazioneManager : MonoBehaviour
     public TMP_InputField inputPassword;
     public GameObject scrittaDiErrore;
 
+    public void Start()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        this.SvuotaCampi();
+    }
+
     public string GetInputNome()
     {
         return this.inputNome.text;
@@ -35,7 +41,8 @@ public class RegistrazioneManager : MonoBehaviour
             if (!isStatoRegistrato)
             {
                 throw new ErroreException();
-            }else
+            }
+            else
             {
                 SystemManager.instance.MostraLogin();
             }
@@ -44,5 +51,13 @@ public class RegistrazioneManager : MonoBehaviour
         {
             this.scrittaDiErrore.SetActive(true);
         }
+        this.SvuotaCampi();
+    }
+
+    public void SvuotaCampi()
+    {
+        this.inputNome.text = "";
+        this.inputNumeroDiTelefono.text = "";
+        this.inputPassword.text = "";
     }
 }
