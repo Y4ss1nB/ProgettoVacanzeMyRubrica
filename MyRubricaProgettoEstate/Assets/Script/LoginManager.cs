@@ -7,4 +7,13 @@ public class LoginManager : MonoBehaviour
     public TMP_InputField inputPassword;
     public GameObject scrittaDiErrore;
 
+    public string GetInputNumeroDiTelefono()
+    {
+        return this.inputNumeroDiTelefono.text;
+    }
+
+    public string GetInputPassword()
+    {
+        return this.inputPassword.text;
+    }
 }
