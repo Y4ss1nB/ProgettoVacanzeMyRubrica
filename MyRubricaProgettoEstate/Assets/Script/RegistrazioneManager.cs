@@ -19,4 +19,30 @@ public class RegistrazioneManager : MonoBehaviour
     {
         return this.inputPassword.text;
     }
+
+    public void Registrazione()
+    {
+        this.scrittaDiErrore.SetActive(false);
+
+        try
+        {
+            if (this.GetInputNome() == "" || this.GetInputNumeroDiTelefono() == "" || this.GetInputPassword() == "")
+            {
+                throw new ErroreException();
+            }
+
+            bool isStatoRegistrato = GestoreUtenti.RegistraUtente(this.GetInputNumeroDiTelefono(), this.GetInputPassword(), this.GetInputNome());
+            if (!isStatoRegistrato)
+            {
+                throw new ErroreException();
+            }else
+            {
+                SystemManager.instance.MostraLogin();
+            }
+        }
+        catch (ErroreException)
+        {
+            this.scrittaDiErrore.SetActive(true);
+        }
+    }
 }
