@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class SystemManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SystemManager : MonoBehaviour
     public GameObject panelloEliminazioneContatto;
     public GameObject panelloRicercaContatto;
     public static SystemManager instance;
+    public TMP_Text nomeUtenteProfilo;
 
     public void Awake()
     {
@@ -43,7 +45,7 @@ public class SystemManager : MonoBehaviour
         panelloRicercaContatto.SetActive(false);
     }
 
-    public void MostraProfilo()
+    public void MostraProfilo(Utente utente)
     {
         panelloLogin.SetActive(false);
         panelloRegistrazione.SetActive(false);
@@ -53,6 +55,8 @@ public class SystemManager : MonoBehaviour
         panelloAggiuntaContattoLavorativo.SetActive(false);
         panelloEliminazioneContatto.SetActive(false);
         panelloRicercaContatto.SetActive(false);
+
+        nomeUtenteProfilo.text = utente.GetNomeUtente();
     }
 
     public void MostraRubrica()

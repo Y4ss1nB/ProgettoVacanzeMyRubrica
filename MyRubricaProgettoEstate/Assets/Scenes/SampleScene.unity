@@ -1154,6 +1154,7 @@ MonoBehaviour:
   panelloAggiuntaContattoLavorativo: {fileID: 1681048598}
   panelloEliminazioneContatto: {fileID: 1387348230}
   panelloRicercaContatto: {fileID: 1453973701}
+  nomeUtenteProfilo: {fileID: 1528528577}
 --- !u!4 &503345277
 Transform:
   m_ObjectHideFlags: 0
