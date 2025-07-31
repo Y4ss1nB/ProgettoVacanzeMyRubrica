@@ -3,6 +3,7 @@ using TMPro;
 
 public class LoginManager : MonoBehaviour
 {
+    //attributi
     public TMP_InputField inputNumeroDiTelefono;
     public TMP_InputField inputPassword;
     public GameObject scrittaDiErrore;
@@ -13,6 +14,7 @@ public class LoginManager : MonoBehaviour
         this.SvuotaCampi();
     }
 
+    //getter
     public string GetInputNumeroDiTelefono()
     {
         return this.inputNumeroDiTelefono.text;
