@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 public class RegistrazioneManager : MonoBehaviour
 {
+    //attributi
     public TMP_InputField inputNome;
     public TMP_InputField inputNumeroDiTelefono;
     public TMP_InputField inputPassword;
@@ -13,6 +14,7 @@ public class RegistrazioneManager : MonoBehaviour
         this.SvuotaCampi();
     }
 
+    //getter
     public string GetInputNome()
     {
         return this.inputNome.text;
