@@ -75,6 +75,7 @@ public class SystemManager : MonoBehaviour
         panelloAggiuntaContattoLavorativo.SetActive(false);
         panelloEliminazioneContatto.SetActive(false);
         panelloRicercaContatto.SetActive(false);
+        RubricaManager.instance.MostraInformazioniContatti();
     }
 
     public void MostraAggiuntaContattoPrivato()
