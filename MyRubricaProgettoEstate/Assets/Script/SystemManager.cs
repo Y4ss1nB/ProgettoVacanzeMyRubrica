@@ -59,6 +59,12 @@ public class SystemManager : MonoBehaviour
         nomeUtenteProfilo.text = utente.GetNomeUtente();
     }
 
+    public void MostraProfiloTatsoIndietro()
+    {
+        Utente utente = UtenteOnline.GetUtenteLoggato();
+        this.MostraProfilo(utente);
+    }
+
     public void MostraRubrica()
     {
         panelloLogin.SetActive(false);
