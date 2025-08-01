@@ -4403,7 +4403,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 503345276}
         m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
-        m_MethodName: MostraLogin
+        m_MethodName: MostraAggiuntaContattoPrivato
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
