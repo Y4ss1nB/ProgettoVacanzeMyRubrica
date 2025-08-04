@@ -27,4 +27,32 @@ public class AggiuntaContattoLavorativoManager : MonoBehaviour
         return this.inputNomeAziendaContatto.text;
     }
 
+    public void Aggiungi()
+    {
+        try
+        {
+            if (this.GetInputNomeContatto() == "" || this.GetInputNumeroContatto() == "")
+            {
+                throw new ErroreException();
+            }
+
+            Utente utente = UtenteOnline.GetUtenteLoggato();
+            foreach (Contatto contatto in utente.GetContatti())
+            {
+                if (contatto.GetTelefono() == this.GetInputNumeroContatto() || contatto.GetNome() == this.GetInputNomeContatto())
+                {
+                    throw new ErroreException();
+                }
+            }
+
+            ContattoLavoro contattoLavorativoDaAggiungere = new ContattoLavoro(this.GetInputNomeContatto(), this.GetInputNumeroContatto(), this.GetInputNomeAziendaContatto(), this.GetInputEmailAziendaleContatto());
+            utente.AggiungiContatto(contattoLavorativoDaAggiungere);
+        }
+        catch (ErroreException)
+        {
+
+            this.scrittaDiErrore.SetActive(false);
+        }
+    }
+
 }
