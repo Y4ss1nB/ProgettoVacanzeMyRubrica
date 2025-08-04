@@ -8,6 +8,12 @@ public class RicercaContattoManager : MonoBehaviour
     public GameObject scrittaDiErrore;
     public TMP_Text InformazioniContatto;
 
+    public void Start()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        this.SvuotaCampi();
+    }
+
     public string GetinputNome()
     {
         return this.inputNome.text;
@@ -28,6 +34,7 @@ public class RicercaContattoManager : MonoBehaviour
             {
                 if (contatto.GetNome() == this.GetinputNome())
                 {
+                    this.scrittaDiErrore.SetActive(false);
                     this.InformazioniContatto.text = contatto.ToString();
                     return;
                 }
@@ -36,8 +43,21 @@ public class RicercaContattoManager : MonoBehaviour
         }
         catch (ErroreException)
         {
+            this.SvuotaCampi();
             this.scrittaDiErrore.SetActive(true);
 
         }
+    }
+
+    public void TornaAllaRubrica()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        SystemManager.instance.MostraRubrica();
+        this.SvuotaCampi();
+    }
+    public void SvuotaCampi()
+    {
+        this.inputNome.text = "";
+        this.InformazioniContatto.text = "";
     }
 }
