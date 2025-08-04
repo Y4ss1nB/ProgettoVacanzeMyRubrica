@@ -1961,9 +1961,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503345276}
-        m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
-        m_MethodName: MostraRubrica
+      - m_Target: {fileID: 1203567622}
+        m_TargetAssemblyTypeName: AggiuntaContattoLavorativoManager, Assembly-CSharp
+        m_MethodName: TornaAllaRubrica
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6537,9 +6537,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503345276}
-        m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
-        m_MethodName: MostraRubrica
+      - m_Target: {fileID: 758859950}
+        m_TargetAssemblyTypeName: AggiuntaContattoPrivatoManager, Assembly-CSharp
+        m_MethodName: TornaAllaRubrica
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10521,7 +10521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1301320915
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11166,7 +11166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1453973702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12166,9 +12166,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503345276}
-        m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
-        m_MethodName: MostraRubrica
+      - m_Target: {fileID: 776168318}
+        m_TargetAssemblyTypeName: EliminazioneContattoManager, Assembly-CSharp
+        m_MethodName: TornaAllaRubrica
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12568,9 +12568,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503345276}
-        m_TargetAssemblyTypeName: SystemManager, Assembly-CSharp
-        m_MethodName: MostraRubrica
+      - m_Target: {fileID: 1701097301}
+        m_TargetAssemblyTypeName: RicercaContattoManager, Assembly-CSharp
+        m_MethodName: TornaAllaRubrica
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
