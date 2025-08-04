@@ -10,6 +10,12 @@ public class AggiuntaContattoLavorativoManager : MonoBehaviour
     public TMP_InputField inputNomeAziendaContatto;
     public GameObject scrittaDiErrore;
 
+    public void Start()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        this.SvuotaCampi();
+    }
+
     public string GetInputNomeContatto()
     {
         return this.inputNomeContatto.text;
@@ -47,12 +53,28 @@ public class AggiuntaContattoLavorativoManager : MonoBehaviour
 
             ContattoLavoro contattoLavorativoDaAggiungere = new ContattoLavoro(this.GetInputNomeContatto(), this.GetInputNumeroContatto(), this.GetInputNomeAziendaContatto(), this.GetInputEmailAziendaleContatto());
             utente.AggiungiContatto(contattoLavorativoDaAggiungere);
+            this.TornaAllaRubrica();
         }
         catch (ErroreException)
         {
 
-            this.scrittaDiErrore.SetActive(false);
+            this.scrittaDiErrore.SetActive(true);
         }
+    }
+
+    public void TornaAllaRubrica()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        SystemManager.instance.MostraRubrica();
+        SvuotaCampi();
+    }
+
+    public void SvuotaCampi()
+    {
+        this.inputNomeContatto.text = "";
+        this.inputNumeroContatto.text = "";
+        this.inputEmailAziendaleContatto.text = "";
+        this.inputNomeAziendaContatto.text = "";
     }
 
 }
