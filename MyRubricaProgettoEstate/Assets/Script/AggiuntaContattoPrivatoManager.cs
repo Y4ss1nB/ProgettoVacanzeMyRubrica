@@ -26,4 +26,34 @@ public class AggiuntaContattoPrivatoManager : MonoBehaviour
     {
         return this.inputSoprannomeContatto.text;
     }
+
+    public void Aggiungi()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        try
+        {
+            if (this.GetInputNomeContatto() == "" || this.GetInputNumeroContatto() == "")
+            {
+                throw new ErroreException();
+            }
+
+            Utente utente = UtenteOnline.GetUtenteLoggato();
+
+            foreach (Contatto contatto in utente.GetContatti())
+            {
+                if (contatto.GetTelefono() == this.GetInputNumeroContatto() || contatto.GetNome() == this.GetInputNomeContatto())
+                {
+                    throw new ErroreException();
+                }
+            }
+
+            ContattoPrivato contattoPrivatoDaAggiungere = new ContattoPrivato(this.GetInputNomeContatto(), this.GetInputNumeroContatto(), this.GetInputIndirizzoContatto(), this.GetInputSoprannomeContatto());
+            utente.AggiungiContatto(contattoPrivatoDaAggiungere);
+        }
+        catch (ErroreException)
+        {
+            this.scrittaDiErrore.SetActive(true);
+
+        }
+    }
 }
