@@ -49,11 +49,27 @@ public class AggiuntaContattoPrivatoManager : MonoBehaviour
 
             ContattoPrivato contattoPrivatoDaAggiungere = new ContattoPrivato(this.GetInputNomeContatto(), this.GetInputNumeroContatto(), this.GetInputIndirizzoContatto(), this.GetInputSoprannomeContatto());
             utente.AggiungiContatto(contattoPrivatoDaAggiungere);
+            this.TornaAllaRubrica();
         }
         catch (ErroreException)
         {
             this.scrittaDiErrore.SetActive(true);
 
         }
+    }
+
+    public void TornaAllaRubrica()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        SystemManager.instance.MostraRubrica();
+        SvuotaCampi();
+    }
+
+    public void SvuotaCampi()
+    {
+        this.inputNomeContatto.text = "";
+        this.inputNumeroContatto.text = "";
+        this.inputIndirizzoContatto.text = "";
+        this.inputSoprannomeContatto.text = "";
     }
 }
