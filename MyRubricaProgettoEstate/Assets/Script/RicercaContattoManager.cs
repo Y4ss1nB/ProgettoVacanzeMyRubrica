@@ -12,4 +12,32 @@ public class RicercaContattoManager : MonoBehaviour
     {
         return this.inputNome.text;
     }
+
+    public void Cerca()
+    {
+        try
+        {
+            if (this.GetinputNome() == "")
+            {
+                throw new ErroreException();
+            }
+
+            Utente utente = UtenteOnline.GetUtenteLoggato();
+
+            foreach (Contatto contatto in utente.GetContatti())
+            {
+                if (contatto.GetNome() == this.GetinputNome())
+                {
+                    this.InformazioniContatto.text = contatto.ToString();
+                    return;
+                }
+            }
+            throw new ErroreException();
+        }
+        catch (ErroreException)
+        {
+            this.scrittaDiErrore.SetActive(true);
+
+        }
+    }
 }
