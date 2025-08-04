@@ -10,6 +10,12 @@ public class AggiuntaContattoPrivatoManager : MonoBehaviour
     public TMP_InputField inputSoprannomeContatto;
     public GameObject scrittaDiErrore;
 
+    public void Start()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        this.SvuotaCampi();
+    }
+
     public string GetInputNomeContatto()
     {
         return this.inputNomeContatto.text;
