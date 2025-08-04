@@ -7,6 +7,11 @@ public class EliminazioneContattoManager : MonoBehaviour
     public TMP_InputField inputNumero;
     public GameObject scrittaDiErrore;
 
+    public void Start()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        this.SvuotaCampi();
+    }
     public string GetInputNumero()
     {
         return this.inputNumero.text;
@@ -27,6 +32,9 @@ public class EliminazioneContattoManager : MonoBehaviour
             if (!isContattoStatoRimosso)
             {
                 throw new ErroreException();
+            }else
+            {
+                this.TornaAllaRubrica();
             }
         }
         catch (ErroreException)
@@ -34,5 +42,16 @@ public class EliminazioneContattoManager : MonoBehaviour
             this.scrittaDiErrore.SetActive(true);
 
         }
+    }
+
+    public void TornaAllaRubrica()
+    {
+        this.scrittaDiErrore.SetActive(false);
+        SystemManager.instance.MostraRubrica();
+        SvuotaCampi();
+    }
+    public void SvuotaCampi()
+    {
+        this.inputNumero.text = "";
     }
 }
