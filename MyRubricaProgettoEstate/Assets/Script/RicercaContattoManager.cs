@@ -7,4 +7,9 @@ public class RicercaContattoManager : MonoBehaviour
     public TMP_InputField inputNome;
     public GameObject scrittaDiErrore;
     public TMP_Text InformazioniContatto;
+
+    public string GetinputNome()
+    {
+        return this.inputNome.text;
+    }
 }
