@@ -11,4 +11,28 @@ public class EliminazioneContattoManager : MonoBehaviour
     {
         return this.inputNumero.text;
     }
+
+    public void Elimina()
+    {
+        try
+        {
+            if (this.GetInputNumero() == "")
+            {
+                throw new ErroreException();
+            }
+
+            Utente utente = UtenteOnline.GetUtenteLoggato();
+
+            bool isContattoStatoRimosso = utente.RimuoviContatto(this.GetInputNumero());
+            if (!isContattoStatoRimosso)
+            {
+                throw new ErroreException();
+            }
+        }
+        catch (ErroreException)
+        {
+            this.scrittaDiErrore.SetActive(true);
+
+        }
+    }
 }
