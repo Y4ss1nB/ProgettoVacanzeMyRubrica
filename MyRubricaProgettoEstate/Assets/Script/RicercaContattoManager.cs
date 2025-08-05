@@ -4,6 +4,8 @@ using TMPro;
 
 public class RicercaContattoManager : MonoBehaviour
 {
+
+    //attributi
     public TMP_InputField inputNome;
     public GameObject scrittaDiErrore;
     public TMP_Text InformazioniContatto;
@@ -14,6 +16,7 @@ public class RicercaContattoManager : MonoBehaviour
         this.SvuotaCampi();
     }
 
+    //getter
     public string GetinputNome()
     {
         return this.inputNome.text;
