@@ -4,6 +4,8 @@ using TMPro;
 
 public class EliminazioneContattoManager : MonoBehaviour
 {
+
+    //attributi
     public TMP_InputField inputNumero;
     public GameObject scrittaDiErrore;
 
@@ -12,6 +14,8 @@ public class EliminazioneContattoManager : MonoBehaviour
         this.scrittaDiErrore.SetActive(false);
         this.SvuotaCampi();
     }
+
+    //getter
     public string GetInputNumero()
     {
         return this.inputNumero.text;
