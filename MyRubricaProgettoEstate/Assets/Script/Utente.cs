@@ -69,6 +69,11 @@ public class Utente
         return false;
     }
 
+    public void OrdinaContatti(IComparer<Contatto> comparatore)
+    {
+        this.listaContatti.Sort(comparatore);
+    }
+
     public override string ToString()
     {
         return "\nNumero: " + GetTelefono() + " Nome: " + GetNomeUtente();
