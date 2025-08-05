@@ -4,5 +4,8 @@ using System.Collections.Generic;
 
 public class ComparatoreNumeroDiTelefonoDecrescente : IComparer<Contatto>
 {
-    
+    public ComparatoreNumeroDiTelefonoDecrescente()
+    {
+        
+    }
 }
