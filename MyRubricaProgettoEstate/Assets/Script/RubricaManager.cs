@@ -46,5 +46,11 @@ public class RubricaManager : MonoBehaviour
         this.utente.OrdinaContatti(this.comparatoreNumeroDiTelefonoCrescente);
         this.MostraInformazioniContatti();
     }
+    public void OrdinaNumeriDiTelefonoDecrescente()
+    {
+        this.utente = UtenteOnline.GetUtenteLoggato();
+        this.utente.OrdinaContatti(this.comparatoreNumeroDiTelefonoDecrescente);
+        this.MostraInformazioniContatti();
+    }
 
 }
