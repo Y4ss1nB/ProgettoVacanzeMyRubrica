@@ -4,6 +4,8 @@ using TMPro;
 
 public class AggiuntaContattoLavorativoManager : MonoBehaviour
 {
+
+    //attributi
     public TMP_InputField inputNomeContatto;
     public TMP_InputField inputNumeroContatto;
     public TMP_InputField inputEmailAziendaleContatto;
@@ -16,6 +18,7 @@ public class AggiuntaContattoLavorativoManager : MonoBehaviour
         this.SvuotaCampi();
     }
 
+    //getter
     public string GetInputNomeContatto()
     {
         return this.inputNomeContatto.text;
