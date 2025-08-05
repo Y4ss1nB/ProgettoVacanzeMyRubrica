@@ -9,9 +9,14 @@ public class RubricaManager : MonoBehaviour
     public Utente utente;
     public static RubricaManager instance;
 
+    IComparer<Contatto> comparatoreNumeroDiTelefonoCrescente;
+    IComparer<Contatto> comparatoreNumeroDiTelefonoDecrescente;
+
     public void Awake()
     {
         instance = this;
+        this.comparatoreNumeroDiTelefonoCrescente = new ComparatoreNumeroDiTelefonoCrescente();
+        this.comparatoreNumeroDiTelefonoDecrescente = new ComparatoreNumeroDiTelefonoDecrescente();
     }
 
     public void MostraInformazioniContatti()
