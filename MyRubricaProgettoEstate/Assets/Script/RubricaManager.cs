@@ -40,4 +40,11 @@ public class RubricaManager : MonoBehaviour
         }
     }
 
+    public void OrdinaNumeriDiTelefonoCrescente()
+    {
+        this.utente = UtenteOnline.GetUtenteLoggato();
+        this.utente.OrdinaContatti(this.comparatoreNumeroDiTelefonoCrescente);
+        this.MostraInformazioniContatti();
+    }
+
 }
