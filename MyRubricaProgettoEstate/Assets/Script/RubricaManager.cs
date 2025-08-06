@@ -9,14 +9,14 @@ public class RubricaManager : MonoBehaviour
     public Utente utente;
     public static RubricaManager instance;
 
-    IComparer<Contatto> comparatoreNumeroDiTelefonoCrescente;
-    IComparer<Contatto> comparatoreNumeroDiTelefonoDecrescente;
+    IComparer<Contatto> comparatoreOrdineAlfabeticoNomeContatto;
+    IComparer<Contatto> comparatoreOrdineAlfabeticoContrarioNomeContatto;
 
     public void Awake()
     {
         instance = this;
-        this.comparatoreNumeroDiTelefonoCrescente = new ComparatoreNumeroDiTelefonoCrescente();
-        this.comparatoreNumeroDiTelefonoDecrescente = new ComparatoreNumeroDiTelefonoDecrescente();
+        this.comparatoreOrdineAlfabeticoNomeContatto = new ComparatoreOrdineAlfabeticoNomeContatto();
+        this.comparatoreOrdineAlfabeticoContrarioNomeContatto = new ComparatoreOrdineAlfabeticoContrarioNomeContatto();
     }
 
     public void MostraInformazioniContatti()
@@ -40,16 +40,16 @@ public class RubricaManager : MonoBehaviour
         }
     }
 
-    public void OrdinaNumeriDiTelefonoCrescente()
+    public void OrdinaInizialeNomeContattoOrdineAlfabetico()
     {
         this.utente = UtenteOnline.GetUtenteLoggato();
-        this.utente.OrdinaContatti(this.comparatoreNumeroDiTelefonoCrescente);
+        this.utente.OrdinaContatti(this.comparatoreOrdineAlfabeticoNomeContatto);
         this.MostraInformazioniContatti();
     }
-    public void OrdinaNumeriDiTelefonoDecrescente()
+    public void OrdinaInizialeNomeContattoOrdineAlfabeticoContrario()
     {
         this.utente = UtenteOnline.GetUtenteLoggato();
-        this.utente.OrdinaContatti(this.comparatoreNumeroDiTelefonoDecrescente);
+        this.utente.OrdinaContatti(this.comparatoreOrdineAlfabeticoContrarioNomeContatto);
         this.MostraInformazioniContatti();
     }
 

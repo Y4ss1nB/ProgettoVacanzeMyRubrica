@@ -2,15 +2,15 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-public class ComparatoreNumeroDiTelefonoCrescente : IComparer<Contatto>
+public class ComparatoreOrdineAlfabeticoNomeContatto : IComparer<Contatto>
 {
-    public ComparatoreNumeroDiTelefonoCrescente()
+    public ComparatoreOrdineAlfabeticoNomeContatto()
     {
 
     }
 
     public int Compare(Contatto contattoUno, Contatto contattoDue)
     {
-        return contattoUno.GetTelefono().CompareTo(contattoDue.GetTelefono());
+        return contattoUno.GetNome().CompareTo(contattoDue.GetNome());
     }
 }

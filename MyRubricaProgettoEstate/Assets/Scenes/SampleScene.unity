@@ -2358,7 +2358,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1874161562}
         m_TargetAssemblyTypeName: RubricaManager, Assembly-CSharp
-        m_MethodName: OrdinaNumeriDiTelefonoDecrescente
+        m_MethodName: OrdinaInizialeNomeContattoOrdineAlfabeticoContrario
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5456,7 +5456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ordine numeri decrescente
+  m_text: Ordine alfabetico al contrario
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5592,7 +5592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ordine numeri crescente
+  m_text: Ordine Alfabetico
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7400,8 +7400,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 295.99, y: 79.75}
-  m_SizeDelta: {x: 173.39, y: 37.264}
+  m_AnchoredPosition: {x: 297.53314, y: 80.17086}
+  m_SizeDelta: {x: 176.4763, y: 38.1057}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873904535
 MonoBehaviour:
@@ -7449,7 +7449,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1874161562}
         m_TargetAssemblyTypeName: RubricaManager, Assembly-CSharp
-        m_MethodName: OrdinaNumeriDiTelefonoCrescente
+        m_MethodName: OrdinaInizialeNomeContattoOrdineAlfabetico
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
