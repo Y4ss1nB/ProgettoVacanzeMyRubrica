@@ -2286,7 +2286,7 @@ GameObject:
   - component: {fileID: 321280508}
   - component: {fileID: 321280507}
   m_Layer: 5
-  m_Name: TastoOrdinamentoDecrescente
+  m_Name: TastoOrdinamentoAlfabeticoContrario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7377,7 +7377,7 @@ GameObject:
   - component: {fileID: 873904536}
   - component: {fileID: 873904535}
   m_Layer: 5
-  m_Name: TastoOrdinamentoCrescente
+  m_Name: TastoOrdinamentoAlfabetico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
