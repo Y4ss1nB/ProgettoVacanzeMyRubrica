@@ -3,15 +3,19 @@ using System;
 
 public class ContattoLavoro : Contatto
 {
+
+    //attributi
     private string nomeAzienda;
     private string emailAziendale;
 
+    //costruttore
     public ContattoLavoro(string nome, string telefono, string nomeAzienda, string emailAziendale) : base(nome, telefono, TipoContatto.Lavoro)
     {
         this.nomeAzienda = nomeAzienda;
         this.emailAziendale = emailAziendale;
     }
 
+    //getter
     public string GetNomeAzienda()
     {
         return this.nomeAzienda;
@@ -21,6 +25,7 @@ public class ContattoLavoro : Contatto
         return this.emailAziendale;
     }
 
+    //setter
     public void SetNomeAzienda(string nomeAzienda)
     {
         this.nomeAzienda = nomeAzienda;
