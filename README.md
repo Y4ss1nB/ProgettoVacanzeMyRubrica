@@ -12,3 +12,30 @@ Il progetto consiste nella creazione di una rubrica usando Unity. La rubrica si 
     - TMPro : usata per l'uso dei testi di TextMesh Pro
     - System: usata per funzionalità di base di C#
     - System.Collections.Generic: usata per usare le liste
+
+## UML
+![](ImmaginiPerReadme/UMLProgettoVacanzeMyRubrica.png) 
+
+## Prototipo dell'interfaccia
+![](ImmaginiPerReadme/PrototipoInterfaccia.png) 
+
+## Screenshot dell'interfaccia finale
+### Schermata di login
+![](ImmaginiPerReadme/SchermataDiLogin.png) 
+### Schermata di registrazione
+![](ImmaginiPerReadme/SchermataRegistrazione.png) 
+### Schermata del profilo
+![](ImmaginiPerReadme/SchermataProfilo.png) 
+### Schermata della rurbica 
+![](ImmaginiPerReadme/SchermataRubrica.png) 
+### Schermata per l'aggiunta di un contatto privato
+![](ImmaginiPerReadme/SchermataPerAggiuntaContattoPrivato.png) 
+### Schermata per l'aggiunta di un contatto lavorativo
+![](ImmaginiPerReadme/SchermataAggiuntaContattoLavorativo.png) 
+### Schermata per l'eliminazione di un contatto
+![](ImmaginiPerReadme/SchermataEliminazioneContatto.png) 
+### Schermata per la ricerca di un contatto
+![](ImmaginiPerReadme/SchermataRicercaContatto.png) 
+
+
+
