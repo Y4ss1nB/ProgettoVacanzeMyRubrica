@@ -8,8 +8,7 @@ Il progetto consiste nella creazione di una rubrica usando Unity. La rubrica si 
 
 ## Tecnologie usate
 - Librerire usate:
-    - UnityEngine: usata per parti di codice di unity come ad Esempio MonoBehaviour 
+    - UnityEngine: usata per parti di codice specifico di unity come ad Esempio MonoBehaviour 
     - TMPro : usata per l'uso dei testi di TextMesh Pro
     - System: usata per funzionalità di base di C#
     - System.Collections.Generic: usata per usare le liste
-    
